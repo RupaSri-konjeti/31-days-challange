@@ -1,0 +1,16 @@
+//linear search
+import java.util.Scanner;
+class LinearSearch
+{
+    public static void main(String args[])
+    {
+       int arr[]={10,39,54,67,89,21};
+       int key=89;
+       for(int i=0;i<arr.length;i++)
+       {
+          if(arr[i]==key)
+       {
+       System.out.println(i);//i → Where? (index/position)| arr[i] → What value stored there
+       break;
+    }
+}}}
