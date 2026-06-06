@@ -1,0 +1,23 @@
+//Array Traversal
+import java.util.Scanner;
+class Traversal
+{
+    public static void main (String args[]){
+    Scanner sc = new Scanner(System.in);
+    System.out.println("enter n means no of  elements");
+    int n = sc.nextInt();                 //reads an integer input from the user and stores it in the variable n.
+    System.out.println("enter those" +n+ "elements");
+    int arr[]=new int[n];                   //creates an array of size n to store integers in memory.
+    int sum=0;
+    for(int i=0;i<n;i++)
+    {
+        arr[i]=sc.nextInt(); //takes an integer input from the user and stores it in the array at index i.
+    }
+    for(int i=0;i<n;i++)
+    {
+        sum=sum+arr[i];
+    }
+    System.out.println("sum is \n"+sum);
+}
+
+}
