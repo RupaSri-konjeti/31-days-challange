@@ -1,3 +1,12 @@
+/*Selection Sort repeatedly finds the smallest element from the unsorted part of the array and places it at the correct position.
+
+Idea
+Find the smallest element.
+Swap it with the first element.
+Find the next smallest element.
+Swap it with the second position.
+Continue until the array is sorted
+*/
 import java.util.Scanner;
     class Main{
         public static void main(String args[])
