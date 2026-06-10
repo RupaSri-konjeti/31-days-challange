@@ -18,14 +18,14 @@ import java.util.Scanner;
             {
                 arr[i]=sc.nextInt();
             }
-            for(int i=0;i<n-1;i++)
+            for(int i=0;i<n-1;i++)//neeed not to sort last element so n-1
             {
-            int minIndex=i;
-            for( int j=i+1;j<n;j++)
+            int minIndex=i;//assuming first element is small number
+            for( int j=i+1;j<n;j++)// i+1 bcs .we need to sort numbers after it
             {
-                if(arr[j]<arr[minIndex])
+                if(arr[j]<arr[minIndex])// inside the unsorted 
                 {
-                    minIndex=j;
+                    minIndex=j; //changes minindex 0 to current number
                 }
             }
             int temp=arr[i];
@@ -73,7 +73,8 @@ class SelectionSort {
             int temp = arr[i];
             arr[i] = arr[minIndex];
             arr[minIndex] = temp;
-        }
+        }//arr[i] = arr[minIndex];
+           arr[0] = arr[3];
 
         System.out.println("Sorted Array:");
 
