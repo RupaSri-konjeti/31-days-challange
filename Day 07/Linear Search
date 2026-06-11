@@ -1,0 +1,32 @@
+//to find linear search
+import java .util.Scanner;
+class Main{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    System.out.println(" enter n");
+    int n = sc.nextInt();
+    System.out.println("enter n elements");
+    int arr[]=new int[n];
+    for(int i=0;i<n;i++)
+    {
+        arr[i]=sc.nextInt();
+    }
+    System.out.println("enter key ");
+    int key = sc.nextInt();
+    //linear search
+    boolean found = false;//initially we assume that key is not in array
+    for(int i=0;i<n;i++)
+    {
+        if (arr[i]==key){
+            found=true;
+            System.out.println("key found at:"+i);
+            break;
+        }
+    }
+    
+    if (found==false)
+    {
+        System.out.println("no key in this array");
+    }
+    }
+}
