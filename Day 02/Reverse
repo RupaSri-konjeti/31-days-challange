@@ -1,4 +1,4 @@
-//linear search
+//Reverse the array
 import java.util.Scanner;
 class Reverse
 {
