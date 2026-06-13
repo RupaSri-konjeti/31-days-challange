@@ -1,0 +1,12 @@
+//Print each character
+import java.util.Scanner;
+class Main{
+    public static void main(String args[])
+    {
+        String name = "Rupa";
+        for(int i=0;i<name.length();i++)
+        {
+            System.out.println(name.charAt(i));
+        }
+    }
+}
