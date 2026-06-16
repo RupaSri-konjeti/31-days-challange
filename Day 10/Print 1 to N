@@ -1,4 +1,4 @@
-// PRINT N TO 1 
+// PRINT 1 TO N 
 import java.util.Scanner;
 public class Main{
     static void PrintNto1(int n){
