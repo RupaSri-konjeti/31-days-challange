@@ -1,0 +1,20 @@
+//N TO 1 NUMBERS USING RECURSION 
+import java.util.Scanner;
+public class Main{
+ static void PrintNto1(int n){
+    
+
+if(n==0)
+return;
+   System.out.print(n + " ");
+   PrintNto1(n-1);
+   }
+   public static void main(String args[])
+   {
+       Scanner sc = new Scanner(System.in);
+       int n = sc.nextInt();
+       PrintNto1(n);
+   }
+  
+    
+}
