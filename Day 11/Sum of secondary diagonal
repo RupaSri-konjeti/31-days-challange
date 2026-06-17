@@ -1,0 +1,23 @@
+// Sum of secondary Diagonal
+import java.util.Scanner;
+class Main{
+    public static void main(String args[])
+    {
+        Scanner sc =new Scanner(System.in);
+        int n[][]=new int[3][3];
+        int Sum =0;
+        for(int i=0;i<n.length;i++)
+        {
+            for(int j=0;j<n.length;j++)
+            {
+                n[i][j]=sc.nextInt();
+                
+            }
+        }
+        for(int i=0;i<n.length;i++)
+    {
+        Sum =Sum+(n[i][2-i]);
+    }
+    System.out.println(Sum);
+    }
+}
