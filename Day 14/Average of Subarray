@@ -1,0 +1,43 @@
+//Average of All Subarrays of Size K
+import java.util.Scanner;
+class Main{
+    public static void main(String args[])
+    {
+        int arr[]={10,20,30,40,50,60};
+        int sum=0;
+        int k=3;//how many numbers to divide 
+        for(int i =0;i<k;i++)
+            sum+=arr[i];
+            System.out.println(sum/k);
+            for(int i =k;i<arr.length;i++){
+                sum=sum-arr[i-k]+arr[i];
+                System.out.println(sum/k);
+                
+            }
+       
+    }
+}
+
+/*
+class Main {
+    public static void main(String args[]) {
+
+        int arr[] = {10, 20, 30, 40, 50, 60};
+        int k = 3;
+        int sum = 0;
+
+        // First window
+        for (int i = 0; i < k; i++)
+            sum += arr[i];
+
+        // Print average of first window
+        System.out.println((double) sum / k);
+
+        // Slide the window
+        for (int i = k; i < arr.length; i++) {
+            sum = sum - arr[i - k] + arr[i];
+            System.out.println((double) sum / k);
+        }
+    }
+}
+*/
